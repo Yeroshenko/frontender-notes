@@ -1,5 +1,8 @@
 module.exports = {
-  plugins: [{
+  plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
@@ -20,20 +23,26 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
-        extensions: [`.md`, `.mdx`],
-        gatsbyRemarkPlugins: [
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1200
-            }
-          }
-        ]
+        extensions: [`.mdx`, `.md`],
+        gatsbyRemarkPlugins: [{
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 1200,
+          },
+        }],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `montserrat`,
+          `nunito \:400,400i,700,700i`
+        ],
+        display: 'swap'
       }
     }
   ]
