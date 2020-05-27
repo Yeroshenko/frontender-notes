@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import { LogoEl } from '../elements'
+import cls from './Logo.module.sass'
 
 export const Logo = () => {
   const data = useStaticQuery(graphql`
@@ -12,5 +12,5 @@ export const Logo = () => {
     }
   `)
 
-  return <LogoEl src={data.logo.publicURL} alt='Logo' />
+  return <img className={cls.logo} src={data.logo.publicURL} alt='Logo' />
 }

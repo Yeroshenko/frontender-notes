@@ -1,0 +1,18 @@
+:root {
+  --color-body-background: #FFFFFF;
+  --color-text: #000000;
+
+  --fonts-main: 'Montserrat', sans-serif;
+  --fonts-code: 'Roboto Mono', monospace;
+
+  --border-radius-post-image: 16px;
+
+  --shadow-post-preview: 0px 20px 40px rgba(0, 0, 0, 0.2);
+
+  --transition-300: 300ms all ease-in-out;
+}
+
+[dark] * {
+  --color-body-background: #111111;
+  --color-text: #FFFFFF;
+}
