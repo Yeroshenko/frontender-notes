@@ -11,6 +11,10 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: ${props => props.theme.fonts.main}
   }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
 `
 
 export const wrapRootElement = ({ element }) => (
