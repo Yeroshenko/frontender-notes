@@ -1,4 +1,4 @@
-:root {
+body {
   --color-body-background: #FFFFFF;
   --color-text: #000000;
 
@@ -12,7 +12,7 @@
   --transition-300: 300ms all ease-in-out;
 }
 
-[dark] * {
+body.dark {
   --color-body-background: #111111;
   --color-text: #FFFFFF;
 }
