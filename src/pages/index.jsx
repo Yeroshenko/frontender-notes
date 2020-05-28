@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Header } from '../components'
+import { Container, Header } from 'components'
 
 export default () => (
   <Container>

@@ -1,9 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { Logo } from '../'
+import { Logo, ThemeSwitch } from 'components'
 import cls from './Header.module.sass'
-import ThemeSwitch from '../ThemeSwitch/ThemeSwitch'
 
 export const Header = () => {
   return (

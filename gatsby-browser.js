@@ -1,24 +1,7 @@
-// import React, { useEffect } from 'react'
-// import { useLocalStorage } from './src/hooks'
+import React from 'react'
 
-import './src/styles/index.sass'
+import { App } from 'components'
 
-// const App = ({ element }) => {
-//   const [theme, setTheme] = useLocalStorage('theme')
-
-//   const html = document.getElementsByTagName('html')[0]
-
-//   useEffect(() => {
-//     if (theme && theme === 'dark') {
-//       html.setAttribute('dark', 'true')
-//     } else {
-//       setTheme('light')
-//     }
-//   }, [html, setTheme, theme])
-
-//   return <>{element}</>
-// }
-
-// export const wrapRootElement = ({ element }) => {
-//   return <App element={element} />
-// }
+export const wrapRootElement = ({ element }) => (
+  <App>{element}</App>
+)
