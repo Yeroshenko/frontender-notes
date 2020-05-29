@@ -6,5 +6,10 @@
 
   --shadow-post-preview: 0px 20px 40px rgba(0, 0, 0, 0.2);
 
+  --gradient-post-preview: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
+  // --gradient-post-preview-hover: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .4) 100%);
+
   --transition-300: 300ms all ease-in-out;
+  --transition-500: 500ms all ease-in-out;
+
 }

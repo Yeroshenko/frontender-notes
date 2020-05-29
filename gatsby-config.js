@@ -42,7 +42,7 @@ module.exports = {
       options: {
         fonts: [
           `montserrat`,
-          `roboto mono\:400,400i,700,700i`
+          `roboto mono\:400,400i,600,600i,700,700i`
         ],
         display: 'swap'
       }

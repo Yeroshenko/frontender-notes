@@ -1,10 +1,9 @@
 import React from 'react'
-
-import { Container, Header, PostCardWrap } from 'components'
+import { Container, Header } from 'components'
 
 export default () => (
   <Container>
     <Header />
-    <PostCardWrap />
+    <h1>404</h1>
   </Container>
 )

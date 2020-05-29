@@ -1,0 +1,10 @@
+$gap: 20px
+
+.postCardWrap > *
+  margin-bottom: $gap
+
+  &:nth-child(2n + 3)
+    margin-left: $gap
+
+  &:not(:first-child)
+    width: calc(50% - 10px)
