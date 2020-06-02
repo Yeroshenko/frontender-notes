@@ -2,8 +2,9 @@ const path = require('path')
 
 exports.createPages = async ({ actions, graphql }) => {
 
-  const allPosts = path.resolve('./src/templates/AllPosts.jsx')
   const { createPage } = actions
+  const allPosts = path.resolve('./src/templates/AllPosts.jsx')
+  const singlePost = path.resolve('./src/templates/SinglePost.jsx')
 
   const { data } = await graphql(`
     query {
@@ -40,14 +41,13 @@ exports.createPages = async ({ actions, graphql }) => {
 
   // create single blog posts
 
-  // data.allMdx.edges.forEach(edge => {
-  //   const slug = edge.node.frontmatter.slug
-  //   const id = edge.node.id
-  //   actions.createPages({
-  //     path: slug,
-  //     omponents: require.resolve('./src/templates/SinglePost.jsx'),
-  //     context: { id }
-  //   })
-  // })
-
+  data.allMdx.edges.forEach(edge => {
+    const slug = edge.node.frontmatter.slug
+    const id = edge.node.id
+    createPage({
+      path: slug,
+      component: singlePost,
+      context: { id }
+    })
+  })
 }

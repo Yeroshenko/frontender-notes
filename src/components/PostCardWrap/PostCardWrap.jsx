@@ -1,6 +1,6 @@
 import React from 'react'
-import { PostCard } from 'components'
 
+import { PostCard } from 'components'
 import cls from './PostCardWrap.module.sass'
 
 export const PostCardWrap = ({ posts }) => {
@@ -14,6 +14,7 @@ export const PostCardWrap = ({ posts }) => {
           return (
             <PostCard
               key={slug}
+              to={slug}
               date={date}
               title={title}
               imgFluid={postImage.childImageSharp.fluid}

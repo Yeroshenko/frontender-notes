@@ -6,6 +6,10 @@ export const COLORS = {
   background: {
     light: '#FFFFFF',
     dark: '#0E141B',
+  },
+  grey: {
+    light: '#A1A2A5',
+    dark: '#A1A2A5',
   }
 }
 

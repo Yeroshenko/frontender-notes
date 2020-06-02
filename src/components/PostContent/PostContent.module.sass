@@ -1,0 +1,115 @@
+$link: #445AFF
+
+.postContent
+
+  h1:not(:first-child),
+  h2, h3, h4, h5, h6
+    margin-top: 2rem
+
+  h1
+    font-size: 2.25rem
+    font-weight: 700
+
+  h2
+    font-size: 1.5rem
+    font-weight: 700
+
+  h3
+    font-size: 1.375rem
+    font-weight: 700
+
+  h4
+    font-size: 1.25rem
+    font-weight: 400
+
+  h5
+    font-size: 1.125rem
+    font-weight: 700
+
+  h6
+    font-size: 1rem
+    font-weight: 700
+    text-transform: uppercase
+
+  p
+    font-size: 1.125rem
+    line-height: 1.875rem
+    font-weight: 400
+    margin-top: 2rem
+
+  a
+    position: relative
+    overflow: hidden
+    text-decoration: none
+    color: $link
+
+    &::after
+      content: ''
+      background: rgba($link, 0.25)
+      position: absolute
+      left: 12px
+      bottom: -6px
+      width: calc(100% - 8px)
+      height: calc(100% - 8px)
+      z-index: -1
+      transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05)
+
+    &:hover:after
+      left: 0
+      bottom: -2px
+      width: 100%
+      height: 100%
+
+  strong
+    font-weight: 700
+
+  em
+    font-style: italic
+
+  del
+    text-decoration: line-through
+
+  code
+    font-family: monospace
+    padding: 0 0.3rem
+    font-size: 1rem
+
+  blockquote p
+    font-style: italic
+    font-size: 1.5rem
+    line-height: 2.125rem
+    text-align: center
+    max-width: 36rem
+    margin: 3rem auto
+
+  ul,
+  ol
+    margin: 1rem 0 1rem 2rem
+
+  li
+    margin: 0.25rem 0
+
+  hr
+    border: 0
+    height: 1px
+    background: var(--color-text)
+    opacity: 0.1
+    margin-top: 2rem
+
+  table
+    width: 100%
+    border-spacing: 0.25rem
+    border-collapse: collapse
+    font-size: 1rem
+    line-height: 1.5rem
+    font-weight: 400
+
+  th
+    font-weight: 700
+
+  table, th, td
+    border: 1px solid var(--color-grey)
+
+  th, td
+    text-align: left
+    padding: 0.5rem
