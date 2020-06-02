@@ -9,7 +9,6 @@ const SinglePost = ({ data }) => {
   const { title } = data.mdx.frontmatter
   const { body } = data.mdx
 
-  console.log(body)
   const postImageStyle = { marginBottom: '60px' }
   const postTitleStyle = { marginBottom: '16px' }
 
