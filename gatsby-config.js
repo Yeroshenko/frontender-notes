@@ -13,6 +13,20 @@ module.exports = {
     `gatsby-plugin-sass`,
     'gatsby-plugin-resolve-src',
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Frontender notes | Заметки фронтенд разработчика',
+        short_name: 'Frontender notes',
+        start_url: '/',
+        background_color: '#0E141B',
+        theme_color: '#0E141B',
+        display: `standalone`,
+        icon: './static/favicon-512.png',
+        include_favicon: true
+      }
+    },
+    `gatsby-plugin-offline`,
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
@@ -52,6 +66,12 @@ module.exports = {
           `montserrat\:400,400i,600,600i,700,700i`
         ],
         display: 'swap'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'ru'
       }
     }
   ]
