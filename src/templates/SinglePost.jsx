@@ -2,11 +2,13 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
-import { Container, Header, PostImage, PostTitle, PostContent } from 'components'
+import { Container, Header, PostImage, PostTitle, PostContent, Seo } from 'components'
 
 const SinglePost = ({ data }) => {
   const imgFluid = data.mdx.frontmatter.postImage.childImageSharp.fluid
-  const { title } = data.mdx.frontmatter
+  const seoImage = data.mdx.frontmatter.postImage.publicURL
+
+  const { title, description } = data.mdx.frontmatter
   const { body } = data.mdx
 
   const postImageStyle = { marginBottom: '60px' }
@@ -14,6 +16,11 @@ const SinglePost = ({ data }) => {
 
   return (
     <Container>
+      <Seo
+        title={title}
+        image={seoImage}
+        description={description}
+      />
       <Header />
       <PostImage imgFluid={imgFluid} style={postImageStyle} />
       <PostTitle title={title} style={postTitleStyle} />
@@ -34,7 +41,9 @@ export const pageQuery = graphql`
         date(locale: "RU", fromNow: false, formatString: "DD MMMM, YYYY")
         title
         slug
+        description
         postImage {
+          publicURL
           childImageSharp {
             fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid

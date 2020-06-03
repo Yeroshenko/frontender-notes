@@ -1,9 +1,12 @@
 import React from 'react'
 
 import cls from './PostTitle.module.sass'
+import { Sparkles } from 'components/Sparkles/Sparkles'
 
 export const PostTitle = ({ title, style }) => (
-  <h1 className={cls.postTitle} style={style}>
-    {title}
-  </h1>
+  <Sparkles style={style}>
+    <h1 className={cls.postTitle}>
+      {title}
+    </h1>
+  </Sparkles>
 )

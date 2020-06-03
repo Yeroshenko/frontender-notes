@@ -1,4 +1,12 @@
 module.exports = {
+  siteMetadata: {
+    title: 'Frontender notes | Заметки фронтенд разработчика', // от 70-ти до 80-ти знаков
+    description: 'Дружественные заметки и туториалы для фронтенд разработчиков. С фокусом на Javascript, React, Gatsby, CSS и анимации', // до 150-ти знаков
+    url: 'https://frontendernotes.netlify.app',
+    twitterUsername: '@MrYeroshenko',
+    image: './space.jpg',
+    author: 'Valeriy Yeroshenko'
+  },
   plugins: [
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -18,13 +26,13 @@ module.exports = {
         path: `${__dirname}/src/posts`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `images`,
-    //     path: `${__dirname}/src/images`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { Container, Header, PostCardWrap } from 'components'
+import { Container, Header, PostCardWrap, Seo } from 'components'
 
 const AllPosts = ({ pageContext, data }) => {
   // const { currentPage, numPages } = pageContext
@@ -13,6 +13,7 @@ const AllPosts = ({ pageContext, data }) => {
 
   return (
     <Container>
+      <Seo />
       <Header />
       <PostCardWrap posts={posts} />
     </Container>

@@ -5,6 +5,6 @@ import { Sparkles } from 'components'
 
 export const Logo = () => (
   <div className={cls.logo}>
-    <Sparkles>Frontend notes</Sparkles>
+    <Sparkles>Frontender notes</Sparkles>
   </div>
 )
