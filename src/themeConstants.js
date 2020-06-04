@@ -10,6 +10,10 @@ export const COLORS = {
   grey: {
     light: '#A1A2A5',
     dark: '#A1A2A5',
+  },
+  link: {
+    light: '#445AFF',
+    dark: '#445AFF'
   }
 }
 
