@@ -11,27 +11,13 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sass',
     'gatsby-plugin-resolve-src',
+    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
         defaultQuality: 100,
       },
     },
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'Frontender notes | Заметки фронтенд разработчика',
-        short_name: 'Frontender notes',
-        start_url: '/',
-        background_color: '#0E141B',
-        theme_color: '#0E141B',
-        display: 'standalone',
-        icon: './static/favicon-512.png',
-        include_favicon: true,
-        crossOrigin: 'use-credentials'
-      }
-    },
-    'gatsby-plugin-offline',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -78,6 +64,28 @@ module.exports = {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
         lang: 'ru'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Frontender notes | Заметки фронтенд разработчика',
+        short_name: 'Frontender notes',
+        start_url: '/',
+        background_color: '#0E141B',
+        theme_color: '#0E141B',
+        display: 'standalone',
+        icon: './static/favicon-512.png',
+        include_favicon: true,
+        crossOrigin: 'use-credentials'
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-168539740-1',
+        head: true,
+        anonymize: true
       }
     }
   ]
