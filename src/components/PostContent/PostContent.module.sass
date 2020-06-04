@@ -1,41 +1,49 @@
+@import '../../styles/media'
+
 $link: #445AFF
 
 .postContent
 
   h1:not(:first-child),
   h2, h3, h4, h5, h6
-    margin-top: 2rem
+    margin-top: 32px
 
   h1
-    font-size: 2.25rem
+    font-size: 32px
     font-weight: 700
 
   h2
-    font-size: 1.5rem
+    font-size: 24px
     font-weight: 700
 
   h3
-    font-size: 1.375rem
+    font-size: 22px
     font-weight: 700
 
   h4
-    font-size: 1.25rem
+    font-size: 20px
     font-weight: 400
 
   h5
-    font-size: 1.125rem
+    font-size: 18px
     font-weight: 700
 
   h6
-    font-size: 1rem
+    font-size: 16px
     font-weight: 700
     text-transform: uppercase
 
   p
-    font-size: 1.125rem
-    line-height: 1.875rem
+    line-height: 1.8
     font-weight: 400
-    margin-top: 2rem
+    margin-top: 32px
+
+    @media screen and ( max-width: $MD_MAX )
+      font-size: 16px
+
+    @media screen and ( min-width: $LG )
+      font-size: 18px
+
 
   a
     position: relative
@@ -72,19 +80,19 @@ $link: #445AFF
   code
     font-family: monospace
     padding: 0 0.3rem
-    font-size: 1rem
+    font-size: 16px
 
   blockquote p
     font-style: italic
-    font-size: 1.5rem
-    line-height: 2.125rem
+    font-size: 24px
+    line-height: 2.125
     text-align: center
-    max-width: 36rem
-    margin: 3rem auto
+    max-width: 576px
+    margin: 48px auto
 
   ul,
   ol
-    margin: 1rem 0 1rem 2rem
+    margin: 16px 0 16px 32px
 
   li
     margin: 0.25rem 0
@@ -94,14 +102,14 @@ $link: #445AFF
     height: 1px
     background: var(--color-text)
     opacity: 0.1
-    margin-top: 2rem
+    margin-top: 32px
 
   table
     width: 100%
-    border-spacing: 0.25rem
+    border-spacing: 4px
     border-collapse: collapse
-    font-size: 1rem
-    line-height: 1.5rem
+    font-size: 16px
+    line-height: 1.5
     font-weight: 400
 
   th
@@ -112,4 +120,4 @@ $link: #445AFF
 
   th, td
     text-align: left
-    padding: 0.5rem
+    padding: 8px

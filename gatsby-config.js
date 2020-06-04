@@ -8,51 +8,57 @@ module.exports = {
     author: 'Valeriy Yeroshenko'
   },
   plugins: [
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sass`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sass',
     'gatsby-plugin-resolve-src',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaultQuality: 100,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Frontender notes | Заметки фронтенд разработчика',
         short_name: 'Frontender notes',
         start_url: '/',
         background_color: '#0E141B',
         theme_color: '#0E141B',
-        display: `standalone`,
+        display: 'standalone',
         icon: './static/favicon-512.png',
-        include_favicon: true
+        include_favicon: true,
+        crossOrigin: 'use-credentials'
       }
     },
-    `gatsby-plugin-offline`,
+    'gatsby-plugin-offline',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `pages`,
+        name: 'pages',
         path: `${__dirname}/src/pages`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `posts`,
+        name: 'posts',
         path: `${__dirname}/src/posts`,
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        extensions: [`.mdx`, `.md`],
+        extensions: ['.mdx', '.md'],
         gatsbyRemarkPlugins: [{
-          resolve: `gatsby-remark-images`,
+          resolve: 'gatsby-remark-images',
           options: {
             maxWidth: 1200,
           },
@@ -60,10 +66,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: 'gatsby-plugin-google-fonts',
       options: {
         fonts: [
-          `montserrat\:400,400i,600,600i,700,700i`
+          'montserrat\:400,400i,600,600i,700,700i'
         ],
         display: 'swap'
       }

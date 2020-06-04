@@ -1,10 +1,19 @@
-$gap: 20px
+@import '../../styles/media'
 
-.postCardWrap > *
-  margin-bottom: $gap
+.postCardWrap
+  display: grid
 
-  &:nth-child(2n + 3)
-    margin-left: $gap
+  @media screen and ( max-width: $XXS_MAX )
+    grid-gap: 16px
 
-  &:not(:first-child)
-    width: calc(50% - 10px)
+  @media screen and ( min-width: $XS )
+    grid-gap: 20px
+
+  @media screen and ( max-width: $MD_MAX )
+    grid-template-columns: 1fr
+
+  @media screen and ( min-width: $LG )
+    grid-template-columns: 1fr 1fr
+
+    & > *:first-child
+      grid-column: 1 / 3

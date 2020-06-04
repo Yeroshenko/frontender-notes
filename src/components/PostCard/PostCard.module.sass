@@ -1,3 +1,6 @@
+@import '../../styles/media'
+
+/* Card */
 .postCard
   position: relative
   overflow: hidden
@@ -5,7 +8,6 @@
   height: 360px
   display: inline-block
   align-items: flex-end
-  padding: 40px 50px
   text-decoration: none
   border-radius: var(--border-radius-post-image)
   box-shadow: var(--shadow-post-preview)
@@ -19,6 +21,36 @@
     .postImageWrap
       transform: scale(1.05)
 
+  @media screen and ( max-width: $XXS_MAX )
+    height: 320px
+    padding: 24px
+
+  @media screen and ( min-width: $XS ) and ( max-width: $XS_MAX )
+    padding: 30px 40px
+
+  @media screen and ( min-width: $SM )
+    padding: 40px 50px
+
+
+/* Large card */
+.largePostCard
+  @media screen and ( min-width: $SM ) // > 640px
+    .postTitle
+      font-size: 28px
+
+  @media screen and ( min-width: $LG )
+    &.postCard
+      height: 460px
+      padding: 50px 60px
+
+    .postTitle
+      font-size: 32px
+
+    .postData
+      font-size: 20px
+
+
+/* Image wrap */
 .postImageWrap
   position: absolute
   top: 0
@@ -30,9 +62,14 @@
   height: 100%
   transition: var(--transition-300)
 
+
+/* Post image */
 .postImage
   position: static !important
+  height: 100%
 
+
+/* Post info */
 .postInfo
   height: 100%
   color: #FFFFFF
@@ -40,26 +77,30 @@
   flex-direction: column
   justify-content: flex-end
 
+/* Post data */
 .postData
-  font-size: 16px
   font-weight: 600
-  margin-bottom: 4px
+  // margin-bottom: 4px
   opacity: .8
 
+  @media screen and ( max-width: $DEF_MAX )
+    font-size: 12px
+
+  @media screen and ( min-width: $XXS ) and ( max-width: $XXS_MAX ) 
+    font-size: 14px
+
+/* Post title */
 .postTitle
-  font-size: 24px
   font-weight: 700
 
-/* full width card */
+  @media screen and ( max-width: $XS )
+    font-size: 18px
 
-.largePostCard
-  &.postCard
-    height: 460px
-    padding: 50px 60px
-
-  .postData
+  @media screen and ( min-width:  $XXS ) and ( max-width: $XXS_MAX )
     font-size: 20px
-    margin-bottom: 0
 
-  .postTitle
-    font-size: 32px
+  @media screen and ( min-width: $XS ) and ( max-width: $SM_MAX )
+    font-size: 24px
+
+  @media screen and ( min-width: $MD )
+    font-size: 28px

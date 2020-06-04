@@ -13,10 +13,9 @@ export const ThemeSwitch = () => {
 
   return (
     <div className={cn(cls.switchWrapper, { [cls.isChecked]: colorMode === 'dark' })}>
-      <label className={cls.toggle} >
+      <label className={cls.toggle}>
         <input
           type='checkbox'
-          label='Переключатель темы'
           className={cls.switch}
           checked={colorMode === 'dark'}
           onChange={e => setColorMode(e.target.checked ? 'dark' : 'light')}

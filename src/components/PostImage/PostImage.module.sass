@@ -1,4 +1,16 @@
+@import '../../styles/media'
+
 .postImage
   max-height: 460px
   width: 100%
   border-radius: var(--border-radius-post-image)
+
+  @media screen and ( max-width: $XXS_MAX )
+    margin-bottom: 20px
+
+  @media screen and ( min-width: $XS ) and ( max-width: $MD_MAX )
+    margin-bottom: 40px
+
+  @media screen and ( min-width: $LG )
+    margin-bottom: 60px
+
