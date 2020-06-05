@@ -11,4 +11,4 @@ postImage: images/985798.png
 
 
 
-![alt text](images/655277.png "Pict title")
+<!-- ![alt text](images/655277.png "Pict title") -->
