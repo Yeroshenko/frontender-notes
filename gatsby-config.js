@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Frontender notes | Заметки фронтенд разработчика', // от 70-ти до 80-ти знаков
-    description: 'Дружественные заметки и туториалы для фронтенд разработчиков. С фокусом на Javascript, React, Gatsby, CSS и анимации', // до 150-ти знаков
+    title: 'Frontender notes | Заметки фронтенд разработчика',
+    description: 'Дружественные заметки и туториалы для фронтенд разработчиков. С фокусом на Javascript, React, Gatsby, CSS и анимации',
     url: 'https://frontendernotes.netlify.app',
     twitterUsername: '@MrYeroshenko',
     image: './space.jpg',
