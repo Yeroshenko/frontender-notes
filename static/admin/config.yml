@@ -6,17 +6,17 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'posts'
-    label: 'Posts'
-    folder: 'content/posts'
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: true
     fields:
-      - { label: 'Title (ideal: 60 char)', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description for SEO (max: 150 char)', name: 'description', widget: 'string' }
-      - { label: 'Slug for URL', name: 'slug', widget: 'string' }
-      - { label: 'Post Image", name: "postImage", widget: "image'}
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Title (ideal: 60 char)", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description for SEO (max: 150 char)", name: "description", widget: "string" }
+      - { label: "Slug for URL", name: "slug", widget: "string" }
+      - { label: "Post Image", name: "postImage", widget: "image"}
+      - { label: "Body", name: "body", widget: "markdown" }
