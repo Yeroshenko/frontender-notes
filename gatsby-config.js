@@ -29,7 +29,7 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'posts',
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/content/posts`,
       },
     },
     {
@@ -75,7 +75,7 @@ module.exports = {
         background_color: '#0E141B',
         theme_color: '#0E141B',
         display: 'standalone',
-        icon: './static/favicon-512.png',
+        icon: './static/favicon.png',
         include_favicon: true,
         crossOrigin: 'use-credentials'
       }
