@@ -1,9 +1,11 @@
 import React from 'react'
-import { Container, Header } from 'components'
+
+import { Container, Header, Seo, NotFound } from 'components'
 
 export default () => (
   <Container>
     <Header />
-    <h1>404</h1>
+    <Seo title='404 | Страница не найдена' />
+    <NotFound />
   </Container>
 )
