@@ -8,21 +8,16 @@ const SinglePost = ({ data }) => {
   const imgFluid = data.mdx.frontmatter.postImage.childImageSharp.fluid
   const seoImage = data.mdx.frontmatter.postImage.publicURL
 
-  const { title, description } = data.mdx.frontmatter
+  const { title, description, date } = data.mdx.frontmatter
   const { body } = data.mdx
-
 
   return (
     <Container>
-      <Seo
-        title={title}
-        image={seoImage}
-        description={description}
-      />
+      <Seo title={title} image={seoImage} description={description} />
       <Header />
       <PostImage imgFluid={imgFluid} />
       <PostTitle title={title} />
-      <PostContent>
+      <PostContent publicationDate={date}>
         <MDXRenderer>{body}</MDXRenderer>
       </PostContent>
     </Container>
@@ -36,7 +31,7 @@ export const pageQuery = graphql`
     mdx(id: { eq: $id }) {
       body
       frontmatter {
-        date(locale: "RU", fromNow: false, formatString: "DD MMMM, YYYY")
+        date(locale: "RU", fromNow: false, formatString: "DD.MM.YYYY")
         title
         slug
         description

@@ -1,40 +1,37 @@
 @import '../../styles/media'
 
 .postContent
+  margin-bottom: 32px
 
   h1:not(:first-child),
   h2, h3, h4, h5, h6
     margin-top: 32px
+  
+  h1,h2, h3, h4, h5, h6
+    font-weight: 700
 
   h1
     font-size: 32px
-    font-weight: 700
 
   h2
     font-size: 24px
-    font-weight: 700
 
   h3
     font-size: 22px
-    font-weight: 700
 
   h4
     font-size: 20px
-    font-weight: 400
 
   h5
     font-size: 18px
-    font-weight: 700
 
   h6
     font-size: 16px
-    font-weight: 700
-    text-transform: uppercase
 
   p
     line-height: 1.8
     font-weight: 400
-    margin-top: 32px
+    margin-top: 16px
 
     @media screen and ( max-width: $MD_MAX )
       font-size: 16px
@@ -95,3 +92,6 @@
   th, td
     text-align: left
     padding: 8px
+
+  .publicationDate
+    margin-top: 32px
