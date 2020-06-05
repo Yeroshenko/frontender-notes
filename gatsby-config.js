@@ -12,6 +12,7 @@ module.exports = {
     'gatsby-plugin-sass',
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-offline',
+    'gatsby-plugin-netlify-cms',
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
