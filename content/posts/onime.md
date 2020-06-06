@@ -1,7 +1,0 @@
----
-title: Кастомизация компонентов в AntDesign
-slug: onime
-date: 2020-05-01
-postImage: images/tyan.png
-description: hi, i am seo description
----
