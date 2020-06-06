@@ -1,9 +1,9 @@
 ---
-title: Как я сделать темную тему в React приложении
-slug: hello-world
-date: 2020-06-01
-postImage: images/meduza.jpg
+title: Hello gatsby
+date: 2020-06-01T00:00:00.000Z
 description: hi, i am seo description
+slug: hello-world
+postImage: images/meduza.jpg
 ---
 
 # Heading1
