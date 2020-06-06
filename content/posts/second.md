@@ -1,7 +1,0 @@
----
-title: Hello second post
-slug: second
-date: 2020-04-01
-postImage: images/surfing.jpg
-description: hi, i am seo description
----
