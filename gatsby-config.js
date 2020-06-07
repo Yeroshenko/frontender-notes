@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Frontender notes | Заметки фронтенд разработчика',
     description: 'Дружественные заметки и туториалы для фронтенд разработчиков. С фокусом на Javascript, React, Gatsby, CSS и анимации',
+    siteUrl: 'https://frontendernotes.netlify.app',
     url: 'https://frontendernotes.netlify.app',
     twitterUsername: '@MrYeroshenko',
     image: './space.jpg',
@@ -13,6 +14,7 @@ module.exports = {
     'gatsby-plugin-resolve-src',
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify-cms',
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
