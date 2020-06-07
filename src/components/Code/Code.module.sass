@@ -1,6 +1,9 @@
 .gatsbyHighlight
   position: relative
-  -webkit-overflow-scrolling: touch
+  font-size: 14px
+  border-radius: var(--border-radius-post-content)
+  box-shadow: var(--shadow-post-content)
+  overflow: hidden
 
 .highlightContent
   overflow-x: auto
@@ -11,7 +14,6 @@
 .gatsbyHighlight pre[class*='language-']
   -webkit-overflow-scrolling: touch
   padding: 16px 12px
-  border-radius: 8px
 
 .gatsbyHighlight pre[class*='language-']::before
   background: black
@@ -54,4 +56,19 @@
 .gatsbyHighlight pre[class~='language-yml']::before
   content: 'ylm'
   background: #F44336
+  color: white
+
+.gatsbyHighlight pre[class~='language-json']::before
+  content: 'json'
+  background: #FBC02D
+  color: black
+
+.gatsbyHighlight pre[class~='language-sass']::before
+  content: 'sass'
+  background: #EC407A
+  color: white
+
+.gatsbyHighlight pre[class~='language-scss']::before
+  content: 'scss'
+  background: #EC407A
   color: white

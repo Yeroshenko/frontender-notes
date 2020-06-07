@@ -1,13 +1,14 @@
 :root {
   --fonts-main: 'Montserrat', sans-serif;
 
-  --border-radius-post-image: 16px;
+  --border-radius-post-preview: 16px;
+  --border-radius-post-content: 8px;
 
   --shadow-post-preview: 0px 20px 40px rgba(0, 0, 0, 0.2);
+  --shadow-post-content: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 
   --gradient-post-preview: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 100%);
 
   --transition-300: 300ms all ease-in-out;
-  --transition-500: 500ms all ease-in-out;
 
 }

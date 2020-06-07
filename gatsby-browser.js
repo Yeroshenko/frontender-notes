@@ -2,11 +2,12 @@ import React from 'react'
 import { MDXProvider } from '@mdx-js/react'
 import { preToCodeBlock } from 'mdx-utils'
 
-import { App, Table, Code, Link } from 'components'
+import { App, Table, Code, Link, Span } from 'components'
 
 const components = {
   table: Table,
   a: Link,
+  span: Span,
   pre: preProps => {
     const props = preToCodeBlock(preProps)
 

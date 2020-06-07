@@ -65,8 +65,21 @@
   ol
     margin: 16px 0 16px 32px
 
+    @media screen and ( max-width: $MD_MAX )
+      font-size: 16px
+
+    @media screen and ( min-width: $LG )
+      font-size: 18px
+
   li
+    position: relative
     margin: 0.25rem 0
+    list-style: none
+
+    &::before
+      content: '-'
+      position: absolute
+      left: -15px
 
   hr
     border: 0
