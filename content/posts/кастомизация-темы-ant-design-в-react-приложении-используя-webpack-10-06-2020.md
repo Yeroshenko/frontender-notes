@@ -1,5 +1,5 @@
 ---
-title: Кастомизация темы Ant Design в React приложении, используя Webpack
+title: Кастомизация темы Ant Design в React приложении
 date: 2020-06-10T14:13:12.169Z
 description: Подробный туториал о кастомизации темы Ant Design в React
   приложении, сгенерированным утилитою Create react app, используя Webpack
