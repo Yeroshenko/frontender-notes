@@ -1,17 +1,17 @@
 export const COLORS = {
-  'text': {
+  text: {
     light: '#000000',
-    dark: '#FFFFFF',
+    dark: '#FFFFFF'
   },
-  'background': {
+  background: {
     light: '#FFFFFF',
-    dark: '#0E141B',
+    dark: '#0E141B'
   },
-  'border': {
+  border: {
     light: '#A1A2A5',
-    dark: '#A1A2A5',
+    dark: '#A1A2A5'
   },
-  'link': {
+  link: {
     light: '#445AFF',
     dark: '#445AFF'
   },
@@ -22,7 +22,7 @@ export const COLORS = {
   'grey-200': {
     light: '#5A6072',
     dark: '#9CA8B4'
-  },
+  }
 }
 
 export const COLOR_MODE_KEY = 'color-mode'
