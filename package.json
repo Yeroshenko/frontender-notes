@@ -31,7 +31,7 @@
     "gatsby-plugin-sharp": "^2.6.24",
     "gatsby-plugin-sitemap": "^2.4.4",
     "gatsby-remark-images": "^3.3.23",
-    "gatsby-source-filesystem": "^2.3.8",
+    "gatsby-source-filesystem": "^2.3.23",
     "gatsby-transformer-sharp": "^2.5.12",
     "mdx-utils": "^0.2.0",
     "netlify-cms-app": "^2.12.14",
