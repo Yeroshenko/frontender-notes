@@ -7075,15 +7075,15 @@ gatsby-telemetry@^1.3.9:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-transformer-sharp@^2.5.3:
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.5.3.tgz#0403c916ce3b96ce244a2b7bbcd11e0d4d8611e4"
-  integrity sha512-tUkH1uCdwSLeOqjptYQD6V/UH5U18UQPFzwKvhWRepcl//FvmCnOv5Kn03SpeBCuPeccxKt3kT3UVJxdOOGShw==
+gatsby-transformer-sharp@^2.5.12:
+  version "2.5.12"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.5.12.tgz#de1cc193c7bbd5a62868bc72eac2f7ebb30418ea"
+  integrity sha512-f9VQVs7WFv3js6oGReJX1WUYxYTfE9CT+VV8tJHJ+uiUQ8JpDHRq4hjDGdhfFgaPjsmdb7Y4gUVOsLsWLitXOg==
   dependencies:
-    "@babel/runtime" "^7.9.6"
+    "@babel/runtime" "^7.10.3"
     bluebird "^3.7.2"
     fs-extra "^8.1.0"
-    potrace "^2.1.6"
+    potrace "^2.1.8"
     probe-image-size "^4.1.1"
     semver "^5.7.1"
     sharp "^0.25.1"
@@ -12350,7 +12350,7 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.26, postcss@^7.0.27, postcss@^7.0.3
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-potrace@^2.1.6, potrace@^2.1.8:
+potrace@^2.1.8:
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/potrace/-/potrace-2.1.8.tgz#50f6fba92e1e39ddef6f979b0a0f841809e0acf2"
   integrity sha512-V9hI7UMJyEhNZjM8CbZaP/804ZRLgzWkCS9OOYnEZkszzj3zKR/erRdj0uFMcN3pp6x4B+AIZebmkQgGRinG/g==
