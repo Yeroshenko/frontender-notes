@@ -28,7 +28,7 @@
     "gatsby-plugin-offline": "^3.2.8",
     "gatsby-plugin-resolve-src": "^2.1.0",
     "gatsby-plugin-sass": "^2.3.2",
-    "gatsby-plugin-sharp": "^2.6.9",
+    "gatsby-plugin-sharp": "^2.6.24",
     "gatsby-plugin-sitemap": "^2.4.4",
     "gatsby-remark-images": "^3.3.23",
     "gatsby-source-filesystem": "^2.3.8",
