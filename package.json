@@ -30,7 +30,7 @@
     "gatsby-plugin-sass": "^2.3.2",
     "gatsby-plugin-sharp": "^2.6.9",
     "gatsby-plugin-sitemap": "^2.4.4",
-    "gatsby-remark-images": "^3.3.8",
+    "gatsby-remark-images": "^3.3.23",
     "gatsby-source-filesystem": "^2.3.8",
     "gatsby-transformer-sharp": "^2.5.3",
     "mdx-utils": "^0.2.0",
