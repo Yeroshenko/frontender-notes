@@ -23,7 +23,7 @@
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-manifest": "^2.4.10",
-    "gatsby-plugin-mdx": "^1.2.12",
+    "gatsby-plugin-mdx": "^1.2.30",
     "gatsby-plugin-netlify-cms": "^4.3.4",
     "gatsby-plugin-offline": "^3.2.8",
     "gatsby-plugin-resolve-src": "^2.1.0",
